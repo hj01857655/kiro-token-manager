@@ -30,10 +30,7 @@
 
 [![Release](https://img.shields.io/github/v/release/hj01857655/kiro-token-manager?style=flat-square)](https://github.com/hj01857655/kiro-token-manager/releases/latest)
 
-| 平台 | 下载 |
-|------|------|
-| Windows | [.msi](https://github.com/hj01857655/kiro-token-manager/releases/latest) / [.exe](https://github.com/hj01857655/kiro-token-manager/releases/latest) |
-| macOS | [.dmg](https://github.com/hj01857655/kiro-token-manager/releases/latest) |
+前往 [Releases](https://github.com/hj01857655/kiro-token-manager/releases/latest) 下载最新版本。
 
 ## 💻 系统要求
 
