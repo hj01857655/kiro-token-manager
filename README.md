@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS-blue" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-1.0.0-green" alt="Version">
+  <img src="https://img.shields.io/github/v/release/hj01857655/kiro-token-manager?label=Version&color=green" alt="Version">
   <img src="https://img.shields.io/badge/QQ群-1020204332-12B7F5?logo=tencentqq" alt="QQ群">
 </p>
 
@@ -40,11 +40,13 @@
 
 [![Release](https://img.shields.io/github/v/release/hj01857655/kiro-token-manager?style=flat-square)](https://github.com/hj01857655/kiro-token-manager/releases/latest)
 
-| 平台 | 下载 |
-|------|------|
-| Windows | [Kiro Token Manager_1.0.0_x64_en-US.msi](https://github.com/hj01857655/kiro-token-manager/releases/download/v1.0.0/Kiro.Token.Manager_1.0.0_x64_en-US.msi) |
-| Windows | [Kiro Token Manager_1.0.0_x64-setup.exe](https://github.com/hj01857655/kiro-token-manager/releases/download/v1.0.0/Kiro.Token.Manager_1.0.0_x64-setup.exe) |
-| macOS | [Kiro Token Manager_1.0.0_universal.dmg](https://github.com/hj01857655/kiro-token-manager/releases/download/v1.0.0/Kiro.Token.Manager_1.0.0_universal.dmg) |
+👉 **[点击这里下载最新版本](https://github.com/hj01857655/kiro-token-manager/releases/latest)**
+
+| 平台 | 文件类型 | 说明 |
+|------|----------|------|
+| Windows | `.msi` | 推荐，双击安装 |
+| Windows | `.exe` | NSIS 安装程序 |
+| macOS | `.dmg` | 拖入 Applications |
 
 ## 💻 系统要求
 
