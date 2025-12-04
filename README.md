@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue" alt="Platform">
   <img src="https://img.shields.io/badge/Version-1.0.0-green" alt="Version">
-  <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
+  <img src="https://img.shields.io/badge/QQ群-1020204332-12B7F5?logo=tencentqq" alt="QQ群">
 </p>
 
 <p align="center">
@@ -41,19 +41,21 @@
 | macOS | `.dmg` |
 | Linux | `.AppImage` / `.deb` |
 
-## 💬 交流群
+## 💬 交流反馈
 
-QQ群: **1020204332**
+<p align="center">
+  <a href="https://qm.qq.com/q/Vh7mUrNpa8">
+    <img src="https://img.shields.io/badge/QQ群-1020204332-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ群">
+  </a>
+</p>
 
-[点击加入 Kiro Token Manager 交流群](https://qm.qq.com/q/Vh7mUrNpa8)
+<p align="center">
+  💡 问题反馈 · 功能建议 · 交流讨论
+</p>
 
 ## ⚠️ 免责声明
 
 本软件仅供学习交流使用，请勿用于商业用途。使用本软件所产生的任何后果由用户自行承担。
-
-## 📄 许可证
-
-本项目为闭源软件，保留所有权利。
 
 ---
 
