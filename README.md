@@ -51,7 +51,7 @@
 
 - 💡 问题反馈、功能建议、使用交流
 - 🐛 [提交 Issue](https://github.com/hj01857655/kiro-token-manager/issues)
-- 💬 QQ 群：[1020204332](https://qm.qq.com/q/Vh7mUrNpa8)
+- 💬 QQ 群：[Kiro Token Manager 交流群 (1020204332)](https://qm.qq.com/q/Vh7mUrNpa8)
 
 <p align="center">
   <a href="https://qm.qq.com/q/Vh7mUrNpa8">
