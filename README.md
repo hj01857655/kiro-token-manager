@@ -49,6 +49,10 @@
 
 ## 💬 交流反馈
 
+- 💡 问题反馈、功能建议、使用交流
+- 🐛 [提交 Issue](https://github.com/hj01857655/kiro-token-manager/issues)
+- 💬 QQ 群：[1020204332](https://qm.qq.com/q/Vh7mUrNpa8)
+
 <p align="center">
   <a href="https://qm.qq.com/q/Vh7mUrNpa8">
     <img src="https://img.shields.io/badge/QQ群-1020204332-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ群">
