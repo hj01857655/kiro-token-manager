@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag version to build (e.g. v1.1.0)'
+        required: true
 
 jobs:
   release:
@@ -23,8 +28,12 @@ jobs:
     runs-on: ${{ matrix.platform }}
 
     steps:
-      - name: Checkout
+      - name: Checkout private repo
         uses: actions/checkout@v4
+        with:
+          repository: hj01857655/kiro-token-manager_dev
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          ref: ${{ github.event.inputs.tag || github.ref_name }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -49,35 +58,9 @@ jobs:
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
           TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
         with:
-          tagName: v__VERSION__
-          releaseName: 'Kiro Token Manager v__VERSION__'
+          tagName: ${{ github.event.inputs.tag || github.ref_name }}
+          releaseName: 'Kiro Token Manager ${{ github.event.inputs.tag || github.ref_name }}'
           releaseBody: '请查看 CHANGELOG 了解更新内容。'
           releaseDraft: false
           prerelease: false
           args: ${{ matrix.target && format('--target {0}', matrix.target) || '' }}
-
-  sync-to-public:
-    needs: release
-    runs-on: ubuntu-latest
-    if: always() && needs.release.result == 'success'
-    continue-on-error: true
-    steps:
-      - name: Wait for all builds
-        run: sleep 60
-
-      - name: Download release assets
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p release_assets
-          gh release download ${{ github.ref_name }} --repo ${{ github.repository }} --dir release_assets || true
-
-      - name: Upload to public repo
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_REPO_TOKEN }}
-        run: |
-          gh release create ${{ github.ref_name }} \
-            --repo hj01857655/kiro-token-manager \
-            --title "Kiro Token Manager ${{ github.ref_name }}" \
-            --notes "请查看 CHANGELOG 了解更新内容。" \
-            release_assets/* || echo "Release may already exist or token not configured"
